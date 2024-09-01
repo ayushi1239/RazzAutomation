@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sterling">
+
+<parameter name="firstname" value="FirstName"/>
+<parameter name="lastname" value="LastName"/>
+<parameter name="phone" value="1234567890"/>
+<parameter name="email" value="demo@demo.com"/>
+<parameter name="message" value="This this comment"/>
+ 
+    <test name="Smoke">
+<classes>
+<class name="src.com.thinksys.testsuite.Smoke">
+<methods>
+<include name="setUp"/>
+<include name="testDrive"/>
+<include name="tearDown"/> 
+</methods>
+</class>
+      
+
+</classes>
+</test> 
+</suite> 

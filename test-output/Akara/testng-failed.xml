@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Akara]">
+  <parameter name="firstname" value="FirstName"/>
+  <parameter name="phone" value="1234567890"/>
+  <parameter name="comment" value="This this comment"/>
+  <parameter name="email" value="demo@demo.com"/>
+  <parameter name="lastname" value="LastName"/>
+  <test thread-count="5" name="Smoke(failed)">
+    <classes>
+      <class name="src.com.thinksys.testsuite.Smoke">
+        <methods>
+          <include name="setUp"/>
+          <include name="testDrive" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- src.com.thinksys.testsuite.Smoke -->
+    </classes>
+  </test> <!-- Smoke(failed) -->
+</suite> <!-- Failed suite [Akara] -->
